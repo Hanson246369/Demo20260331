@@ -9,3 +9,5 @@ sh32f9xx_sb0_rcc.c/h     Add PLL switch RCC_PLLONorOFF().
 sh32f9xx_sb0_syscfg.c/h  modify function SYSCFG_EnterSTOPMode and SYSCFG_OSCPinConfig.
 sh32f9xx_sb0_pwm.c       modify function PWM_OutputMode.
 ------------------------------------------------------------- 
+
+2143
