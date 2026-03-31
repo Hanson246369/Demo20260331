@@ -1,0 +1,212 @@
+version: "4.1"
+name: FP-24MF-DP
+type: ARM
+deviceName: null
+packDir: null
+srcDirs: []
+virtualFolder:
+  name: <virtual_root>
+  files: []
+  folders:
+    - name: STARTCODE
+      files:
+        - path: ../../Libraries/CMSIS/Device/Sinowealth/SH32F9xx/Source/Startup/arm/startup_sh32f9001_keil.s
+      folders: []
+    - name: USER
+      files:
+        - path: ../Program/user/main.c
+        - path: ../Program/user/interrupt.c
+        - path: ../Program/user/sh32f9xx_sb0_retarget.c
+        - path: ../Program/user/sh32f9xx_sb0_retarget.h
+        - path: ../Program/user/app.c
+        - path: ../Program/user/delay.c
+      folders: []
+    - name: HW_DRIVER
+      files:
+        - path: ../Program/uart/uart.c
+        - path: ../Program/lcd/lcd.c
+        - path: ../Program/timer/timer.c
+        - path: ../Program/eeprom/eeprom.c
+        - path: ../Program/iic/lpiic.c
+        - path: ../Program/iic/hpiic.c
+        - path: ../Program/beep/beep.c
+        - path: ../Program/key/key.c
+        - path: ../Program/fault/fault.c
+        - path: ../Program/adc/adc.c
+      folders: []
+    - name: Queue
+      files:
+        - path: ../Program/queue/queue.c
+      folders: []
+    - name: FWlib
+      files:
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_gpio.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_iwdt.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_rcc.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_syscfg.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_uart.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_timer.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_lcd.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_nvic.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_flash.c
+        - path: ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/src/sh32f9xx_sb0_adc.c
+      folders: []
+    - name: CMSIS
+      files:
+        - path: ../../Libraries/CMSIS/Device/Sinowealth/SH32F9xx/Source/system_sh32f9xx_sb0.c
+      folders: []
+    - name: README
+      files:
+        - path: ../../readme.txt
+      folders: []
+dependenceList: []
+outDir: build
+miscInfo:
+  uid: 2d800225369db75ad1ff7ecf40ae4819
+targets:
+  FP-24MF-DP:
+    cppPreprocessAttrs:
+      defineList:
+        - _MODULE_DBG_PRINTF
+        - DEFAULT_ASSERT_ENABLE
+        - _HEAD_FILE_SH32F9001
+      incList:
+        - ../../Libraries/CMSIS/Device/Sinowealth/SH32F9xx/Include
+        - ../../Libraries/CMSIS/Include
+        - ../../Libraries/SH32F9xx_sb0_StdPeriph_Driver/1.0/inc
+        - ../Program/uart
+        - ../Program/user
+        - ../Program/lcd
+        - ../Program/timer
+        - ../Program/eeprom
+        - ../Program/iic
+        - ../Program/beep
+        - ../Program/key
+        - ../Program/fault
+        - ../Program/queue
+        - ../Program/adc
+      libList: []
+    excludeList: []
+    toolchain: AC5
+    toolchainConfigMap:
+      AC5:
+        archExtensions: ""
+        cpuType: Cortex-M3
+        floatingPointHardware: none
+        options:
+          version: 4
+          afterBuildTasks:
+            - name: "[Copy linker output for Keil User Commands]"
+              abortAfterFailed: true
+              command: mkdir ${KEIL_OUTPUT_DIR} & copy "${OutDir}\${ProjectName}.axf" "${KEIL_OUTPUT_DIR}\${ProjectName}.axf"
+              disable: true
+            - name: D:\Keil_v5.23\ARM\ARMCC\bin\fromelf.exe   --bin -o  .\Objects\FP-24MF-DP.bin .\Objects\FP-24MF-DP.axf
+              abortAfterFailed: true
+              command: D:\Keil_v5.23\ARM\ARMCC\bin\fromelf.exe   --bin -o  .\Objects\FP-24MF-DP.bin .\Objects\FP-24MF-DP.axf
+              disable: true
+          asm-compiler:
+            defines: []
+          beforeBuildTasks: []
+          c/cpp-compiler:
+            CXX_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            C_FLAGS: --diag_suppress=1 --diag_suppress=1295
+            c99-mode: true
+            one-elf-section-per-function: true
+            optimization: level-0
+            warnings: all-warnings
+          global:
+            output-debug-info: enable
+            use-microLIB: false
+          linker:
+            $outputTaskExcludes:
+              - .bin
+            output-format: elf
+            ro-base: "0x00000000"
+            rw-base: "0x20000000"
+            xo-base: ""
+        scatterFilePath: ""
+        storageLayout:
+          RAM:
+            - id: 1
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 3
+              isChecked: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              noInit: false
+              tag: RAM
+            - id: 1
+              isChecked: true
+              mem:
+                size: "0x4000"
+                startAddr: "0x20000000"
+              noInit: false
+              tag: IRAM
+            - id: 2
+              isChecked: false
+              mem:
+                size: "0x4000"
+                startAddr: "0x10000000"
+              noInit: false
+              tag: IRAM
+          ROM:
+            - id: 1
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 3
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: ROM
+            - id: 1
+              isChecked: true
+              isStartup: true
+              mem:
+                size: "0x40000"
+                startAddr: "0x0"
+              tag: IROM
+            - id: 2
+              isChecked: false
+              isStartup: false
+              mem:
+                size: "0x0"
+                startAddr: "0x0"
+              tag: IROM
+        useCustomScatterFile: false
+    uploadConfigMap:
+      JLink:
+        baseAddr: ""
+        bin: ""
+        cpuInfo:
+          cpuName: "null"
+          vendor: "null"
+        otherCmds: ""
+        proType: 1
+        speed: 8000
+    uploader: JLink

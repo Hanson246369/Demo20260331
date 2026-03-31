@@ -1,0 +1,2314 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Objects\FP-24MF-DP.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Objects\FP-24MF-DP.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Mar 25 17:53:19 2026
+<BR><P>
+<H3>Maximum Stack Usage =        312 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+__rt_entry_main &rArr; main &rArr; value_init &rArr; E2_InitSystemData &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[5b]">__user_initial_stackheap</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[9]">Default_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">Default_Handler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[19]">ADC_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[f]">BOD_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[7]">BusFault_Handler</a> from interrupt.o(i.BusFault_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[16]">DMA_CH0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[17]">DMA_CH1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[18]">DMA_CH2_7_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[b]">DebugMon_Handler</a> from interrupt.o(i.DebugMon_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[9]">Default_Handler</a> from startup_sh32f9001_keil.o(.text) referenced 5 times from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[11]">EXTI0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[2c]">EXTI15_10_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[12]">EXTI1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[13]">EXTI2_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[14]">EXTI3_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[15]">EXTI4_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[22]">EXTI9_5_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[5]">HardFault_Handler</a> from interrupt.o(i.HardFault_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[36]">LED_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[6]">MemManage_Handler</a> from interrupt.o(i.MemManage_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[4]">NMI_Handler</a> from interrupt.o(i.NMI_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[1e]">PCA0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[1f]">PCA1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[20]">PCA2_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[21]">PCA3_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[32]">PCA4_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[33]">PCA5_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[34]">PCA6_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[35]">PCA7_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[1a]">PWM0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[1b]">PWM1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[1c]">PWM2_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[1d]">PWM3_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[c]">PendSV_Handler</a> from interrupt.o(i.PendSV_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[10]">RCC_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[3]">Reset_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[26]">SPI0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[27]">SPI1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[a]">SVC_Handler</a> from interrupt.o(i.SVC_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[d]">SysTick_Handler</a> from interrupt.o(i.SysTick_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[38]">SystemInit</a> from system_sh32f9xx_sb0.o(i.SystemInit) referenced from startup_sh32f9001_keil.o(.text)
+ <LI><a href="#[2e]">TIM5_Handler</a> from timer.o(i.TIM5_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[2f]">TIM6_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[30]">TIM7_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[31]">TIM8_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[24]">TWI0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[25]">TWI1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[37]">TouchKey_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[23]">UART0_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[28]">UART1_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[29]">UART2_Handler</a> from interrupt.o(i.UART2_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[2a]">UART3_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[2b]">UART4_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[2d]">UART5_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[8]">UsageFault_Handler</a> from interrupt.o(i.UsageFault_Handler) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[e]">WWDT_Handler</a> from startup_sh32f9001_keil.o(.text) referenced from startup_sh32f9001_keil.o(RESET)
+ <LI><a href="#[3c]">__main</a> from __main.o(!!!main) referenced from startup_sh32f9001_keil.o(.text)
+ <LI><a href="#[3b]">_printf_input_char</a> from _printf_char_common.o(.text) referenced from _printf_char_common.o(.text)
+ <LI><a href="#[3a]">fputc</a> from sh32f9xx_sb0_retarget.o(i.fputc) referenced from _printf_char_file.o(.text)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[3c]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+<LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[3d]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[3f]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[108]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[109]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[40]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[10a]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[41]"></a>_printf_d</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_d.o(.ARM.Collect$$_printf_percent$$00000009))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56 + Unknown Stack Size
+<LI>Call Chain = _printf_d &rArr; _printf_int_dec &rArr; _printf_int_common
+</UL>
+<BR>[Calls]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+
+<P><STRONG><a name="[53]"></a>_printf_percent</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+
+<P><STRONG><a name="[43]"></a>_printf_s</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_s.o(.ARM.Collect$$_printf_percent$$00000014))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
+<LI>Call Chain = _printf_s &rArr; _printf_string &rArr; _printf_cs_common &rArr; _printf_str
+</UL>
+<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_string
+</UL>
+
+<P><STRONG><a name="[10b]"></a>_printf_percent_end</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, _printf_percent_end.o(.ARM.Collect$$_printf_percent$$00000017))
+
+<P><STRONG><a name="[48]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+</UL>
+
+<P><STRONG><a name="[10c]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[10d]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[10e]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[10f]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[110]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+
+<P><STRONG><a name="[111]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+
+<P><STRONG><a name="[112]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+
+<P><STRONG><a name="[113]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[114]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+
+<P><STRONG><a name="[115]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[116]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[117]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[118]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[119]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[11a]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[11b]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+
+<P><STRONG><a name="[11c]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+
+<P><STRONG><a name="[11d]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+
+<P><STRONG><a name="[11e]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+
+<P><STRONG><a name="[11f]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+
+<P><STRONG><a name="[120]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+
+<P><STRONG><a name="[4d]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[121]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+
+<P><STRONG><a name="[122]"></a>__rt_lib_shutdown_fini_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+
+<P><STRONG><a name="[123]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[124]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))
+
+<P><STRONG><a name="[125]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))
+
+<P><STRONG><a name="[126]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+
+<P><STRONG><a name="[127]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[128]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[3e]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[129]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[45]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[47]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Calls]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[12a]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[49]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; value_init &rArr; E2_InitSystemData &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[12b]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[5c]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[4c]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+</UL>
+
+<P><STRONG><a name="[12c]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[4e]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[3]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>ADC_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>BOD_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>DMA_CH0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>DMA_CH1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>DMA_CH2_7_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>EXTI0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>EXTI15_10_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>EXTI1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>EXTI2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>EXTI3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>EXTI4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>EXTI9_5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>LED_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>PCA0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>PCA1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>PCA2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>PCA3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>PCA4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>PCA5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>PCA6_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>PCA7_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>PWM0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>PWM1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>PWM2_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>PWM3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>RCC_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>SPI0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>SPI1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>TIM6_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>TIM7_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>TIM8_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>TWI0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>TWI1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>TouchKey_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>UART0_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>UART1_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[2a]"></a>UART3_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>UART4_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>UART5_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>WWDT_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[5b]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_sh32f9001_keil.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[50]"></a>__2printf</STRONG> (Thumb, 20 bytes, Stack size 24 bytes, noretval__2printf.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128 + Unknown Stack Size
+<LI>Call Chain = __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+
+<P><STRONG><a name="[52]"></a>__printf</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, __printf.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24 + Unknown Stack Size
+<LI>Call Chain = __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_percent
+</UL>
+<BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+</UL>
+
+<P><STRONG><a name="[56]"></a>_printf_str</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, _printf_str.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _printf_str
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+
+<P><STRONG><a name="[42]"></a>_printf_int_dec</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, _printf_dec.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _printf_int_dec &rArr; _printf_int_common
+</UL>
+<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_d
+</UL>
+
+<P><STRONG><a name="[77]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = __aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_InitSystemData
+</UL>
+
+<P><STRONG><a name="[12d]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[12e]"></a>__rt_memclr_w</STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[12f]"></a>_memset_w</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)
+
+<P><STRONG><a name="[130]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[131]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[132]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[54]"></a>_printf_int_common</STRONG> (Thumb, 178 bytes, Stack size 32 bytes, _printf_intcommon.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = _printf_int_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_dec
+</UL>
+
+<P><STRONG><a name="[55]"></a>_printf_cs_common</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = _printf_cs_common &rArr; _printf_str
+</UL>
+<BR>[Calls]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_string
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char
+</UL>
+
+<P><STRONG><a name="[57]"></a>_printf_char</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, _printf_char.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+
+<P><STRONG><a name="[44]"></a>_printf_string</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, _printf_char.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = _printf_string &rArr; _printf_cs_common &rArr; _printf_str
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_cs_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_s
+</UL>
+
+<P><STRONG><a name="[51]"></a>_printf_char_file</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, _printf_char_file.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104 + Unknown Stack Size
+<LI>Call Chain = _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ferror
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+
+<P><STRONG><a name="[58]"></a>_printf_char_common</STRONG> (Thumb, 32 bytes, Stack size 64 bytes, _printf_char_common.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88 + Unknown Stack Size
+<LI>Call Chain = _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
+</UL>
+
+<P><STRONG><a name="[59]"></a>ferror</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, ferror.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_file
+</UL>
+
+<P><STRONG><a name="[46]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[4b]"></a>exit</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = exit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[133]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[5a]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[134]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[4f]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+</UL>
+
+<P><STRONG><a name="[135]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[136]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[137]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[5d]"></a>ADC_ChannelConfig</STRONG> (Thumb, 332 bytes, Stack size 32 bytes, sh32f9xx_sb0_adc.o(i.ADC_ChannelConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = ADC_ChannelConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+</UL>
+
+<P><STRONG><a name="[5f]"></a>ADC_ClearFlag</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, sh32f9xx_sb0_adc.o(i.ADC_ClearFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = ADC_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[64]"></a>ADC_GetConversionValue</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, sh32f9xx_sb0_adc.o(i.ADC_GetConversionValue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = ADC_GetConversionValue &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[65]"></a>ADC_GetFlagStatus</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, sh32f9xx_sb0_adc.o(i.ADC_GetFlagStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = ADC_GetFlagStatus &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[66]"></a>ADC_Init</STRONG> (Thumb, 652 bytes, Stack size 24 bytes, sh32f9xx_sb0_adc.o(i.ADC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = ADC_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+</UL>
+
+<P><STRONG><a name="[67]"></a>ADC_Init_Config</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, adc.o(i.ADC_Init_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
+<LI>Call Chain = ADC_Init_Config &rArr; ADC_Mode_Config &rArr; ADC_ChannelConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GPIO_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6b]"></a>ADC_OnOff</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, sh32f9xx_sb0_adc.o(i.ADC_OnOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = ADC_OnOff &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+</UL>
+
+<P><STRONG><a name="[6c]"></a>ADC_SoftwareStartConversion</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sh32f9xx_sb0_adc.o(i.ADC_SoftwareStartConversion))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = ADC_SoftwareStartConversion &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[69]"></a>ADC_StructInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, sh32f9xx_sb0_adc.o(i.ADC_StructInit))
+<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+</UL>
+
+<P><STRONG><a name="[6d]"></a>Beep_GPIO_Config</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, beep.o(i.Beep_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = Beep_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a3]"></a>Beep_ResetMode3</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, beep.o(i.Beep_ResetMode3))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyTaskDeal
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_BeepControl
+</UL>
+
+<P><STRONG><a name="[6f]"></a>Beep_SetMode1</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, beep.o(i.Beep_SetMode1))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = Beep_SetMode1 &rArr; GPIO_ResetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_KeyDetect
+</UL>
+
+<P><STRONG><a name="[b9]"></a>Beep_SetMode2</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, beep.o(i.Beep_SetMode2))
+<BR><BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyTaskDeal
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureZeroTask
+</UL>
+
+<P><STRONG><a name="[a4]"></a>Beep_SetMode3</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, beep.o(i.Beep_SetMode3))
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_BeepControl
+</UL>
+
+<P><STRONG><a name="[7]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, interrupt.o(i.BusFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[ef]"></a>De_Queue</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, queue.o(i.De_Queue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = De_Queue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReceiveBytes
+</UL>
+
+<P><STRONG><a name="[b]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.DebugMon_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[70]"></a>DisplayPressureValue</STRONG> (Thumb, 830 bytes, Stack size 32 bytes, app.o(i.DisplayPressureValue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = DisplayPressureValue &rArr; LCD_ClearNumAndFlag &rArr; LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNum
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearNumAndFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayLPModeSetting
+</UL>
+
+<P><STRONG><a name="[74]"></a>E2_InitSystemData</STRONG> (Thumb, 124 bytes, Stack size 8 bytes, eeprom.o(i.E2_InitSystemData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 304 + Unknown Stack Size
+<LI>Call Chain = E2_InitSystemData &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ReadByte
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+</UL>
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_init
+</UL>
+
+<P><STRONG><a name="[76]"></a>E2_Write_DataStr_HalfWord</STRONG> (Thumb, 188 bytes, Stack size 40 bytes, eeprom.o(i.E2_Write_DataStr_HalfWord))
+<BR><BR>[Stack]<UL><LI>Max Depth = 296 + Unknown Stack Size
+<LI>Call Chain = E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_ReloadCounter
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSCFG_VLVRConfig
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_Unlock
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ReadByte
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_Lock
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_EraseSector
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_LVRENValue
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+<BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_InitSystemData
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyTaskDeal
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_init
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureZeroTask
+</UL>
+
+<P><STRONG><a name="[7e]"></a>E2_Write_DataStr_HalfWord_NoCheck</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, eeprom.o(i.E2_Write_DataStr_HalfWord_NoCheck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 256 + Unknown Stack Size
+<LI>Call Chain = E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_ReloadCounter
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSCFG_VLVRConfig
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_Unlock
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramPage_HalfWord
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_Lock
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GET_LVRENValue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+</UL>
+
+<P><STRONG><a name="[ed]"></a>En_Queue</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, queue.o(i.En_Queue))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = En_Queue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Handler
+</UL>
+
+<P><STRONG><a name="[84]"></a>FLASH_CacheReset</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, sh32f9xx_sb0_flash.o(i.FLASH_CacheReset))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_EraseSector
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramHalfWord
+</UL>
+
+<P><STRONG><a name="[80]"></a>FLASH_ClearFlag</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, sh32f9xx_sb0_flash.o(i.FLASH_ClearFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramPage_HalfWord
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_GetStatus
+</UL>
+
+<P><STRONG><a name="[83]"></a>FLASH_Clear_PGMWindow</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sh32f9xx_sb0_flash.o(i.FLASH_Clear_PGMWindow))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_EraseSector
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramHalfWord
+</UL>
+
+<P><STRONG><a name="[7c]"></a>FLASH_E2_EraseSector</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, sh32f9xx_sb0_flash.o(i.FLASH_E2_EraseSector))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = FLASH_E2_EraseSector &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Set_PGMWindow
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Clear_PGMWindow
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_CacheReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+</UL>
+
+<P><STRONG><a name="[7d]"></a>FLASH_E2_Lock</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sh32f9xx_sb0_flash.o(i.FLASH_E2_Lock))
+<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+
+<P><STRONG><a name="[85]"></a>FLASH_E2_ProgramHalfWord</STRONG> (Thumb, 116 bytes, Stack size 24 bytes, sh32f9xx_sb0_flash.o(i.FLASH_E2_ProgramHalfWord))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Set_PGMWindow
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Clear_PGMWindow
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_CacheReset
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramPage_HalfWord
+</UL>
+
+<P><STRONG><a name="[7f]"></a>FLASH_E2_ProgramPage_HalfWord</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, sh32f9xx_sb0_flash.o(i.FLASH_E2_ProgramPage_HalfWord))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
+<LI>Call Chain = FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Verify_Byte
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramHalfWord
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_ClearFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+
+<P><STRONG><a name="[75]"></a>FLASH_E2_ReadByte</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, sh32f9xx_sb0_flash.o(i.FLASH_E2_ReadByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = FLASH_E2_ReadByte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_InitSystemData
+</UL>
+
+<P><STRONG><a name="[7b]"></a>FLASH_E2_Unlock</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, sh32f9xx_sb0_flash.o(i.FLASH_E2_Unlock))
+<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+
+<P><STRONG><a name="[87]"></a>FLASH_GetStatus</STRONG> (Thumb, 118 bytes, Stack size 8 bytes, sh32f9xx_sb0_flash.o(i.FLASH_GetStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_ClearFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_WaitForLastOperation
+</UL>
+
+<P><STRONG><a name="[82]"></a>FLASH_Set_PGMWindow</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sh32f9xx_sb0_flash.o(i.FLASH_Set_PGMWindow))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_EraseSector
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramHalfWord
+</UL>
+
+<P><STRONG><a name="[86]"></a>FLASH_Verify_Byte</STRONG> (Thumb, 78 bytes, Stack size 32 bytes, sh32f9xx_sb0_flash.o(i.FLASH_Verify_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = FLASH_Verify_Byte &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramPage_HalfWord
+</UL>
+
+<P><STRONG><a name="[81]"></a>FLASH_WaitForLastOperation</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, sh32f9xx_sb0_flash.o(i.FLASH_WaitForLastOperation))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_GetStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_EraseSector
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramHalfWord
+</UL>
+
+<P><STRONG><a name="[78]"></a>GET_LVRENValue</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, eeprom.o(i.GET_LVRENValue))
+<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+
+<P><STRONG><a name="[62]"></a>GPIO_Init</STRONG> (Thumb, 370 bytes, Stack size 24 bytes, sh32f9xx_sb0_gpio.o(i.GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SW_ERROR_GPIO_Config
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_GPIO_Init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_GPIO_Config
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_GPIO_Init
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_GPIO_Config
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GPIO_Config
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_OutMode
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_InMode
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_OutMode
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_InMode
+</UL>
+
+<P><STRONG><a name="[63]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 296 bytes, Stack size 24 bytes, sh32f9xx_sb0_gpio.o(i.GPIO_PinAFConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SW_ERROR_GPIO_Config
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_GPIO_Init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_GPIO_Config
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_GPIO_Init
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_GPIO_Config
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GPIO_Config
+</UL>
+
+<P><STRONG><a name="[88]"></a>GPIO_ReadInputData</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, sh32f9xx_sb0_gpio.o(i.GPIO_ReadInputData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = GPIO_ReadInputData &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_KeyDetect
+</UL>
+
+<P><STRONG><a name="[89]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, sh32f9xx_sb0_gpio.o(i.GPIO_ReadInputDataBit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = GPIO_ReadInputDataBit &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_SwitchFaultDetect
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[6e]"></a>GPIO_ResetBits</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, sh32f9xx_sb0_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = GPIO_ResetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_LCDOff
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_BeepControl
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_GPIO_Config
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_SetMode1
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_NAck
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Ack
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_NAck
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Ack
+</UL>
+
+<P><STRONG><a name="[8a]"></a>GPIO_SetBits</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, sh32f9xx_sb0_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = GPIO_SetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_GPIO_Init
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_PowerOnDisplay
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_BeepControl
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_GPIO_Init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_NAck
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Ack
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_NAck
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Ack
+</UL>
+
+<P><STRONG><a name="[bc]"></a>GetLength</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, queue.o(i.GetLength))
+<BR><BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReceiveBytes
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartReceDataFromDriver
+</UL>
+
+<P><STRONG><a name="[8b]"></a>HPValueSample</STRONG> (Thumb, 232 bytes, Stack size 24 bytes, hpiic.o(i.HPValueSample))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240 + Unknown Stack Size
+<LI>Call Chain = HPValueSample &rArr; HpI2C_Init &rArr; HP_IIC_Read_Byte &rArr; HP_IIC_NAck &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CSendCMD
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CReceiveBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureSample
+</UL>
+
+<P><STRONG><a name="[8f]"></a>HP_IIC_Ack</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, hpiic.o(i.HP_IIC_Ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_Ack &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[92]"></a>HP_IIC_GPIO_Init</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, hpiic.o(i.HP_IIC_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_GPIO_Init &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[93]"></a>HP_IIC_NAck</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, hpiic.o(i.HP_IIC_NAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_NAck &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[94]"></a>HP_IIC_Read_Byte</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, hpiic.o(i.HP_IIC_Read_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_Read_Byte &rArr; HP_IIC_NAck &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_InMode
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_NAck
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Ack
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CSendCMD
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[95]"></a>HP_IIC_SDA_InMode</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, hpiic.o(i.HP_IIC_SDA_InMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_SDA_InMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[90]"></a>HP_IIC_SDA_OutMode</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, hpiic.o(i.HP_IIC_SDA_OutMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_NAck
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Ack
+</UL>
+
+<P><STRONG><a name="[96]"></a>HP_IIC_Send_Byte</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, hpiic.o(i.HP_IIC_Send_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_Send_Byte &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CSendCMD
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[97]"></a>HP_IIC_Start</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, hpiic.o(i.HP_IIC_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_Start &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CSendCMD
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[98]"></a>HP_IIC_Stop</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, hpiic.o(i.HP_IIC_Stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_Stop &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CSendCMD
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CReceiveBytes
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+</UL>
+
+<P><STRONG><a name="[99]"></a>HP_IIC_Wait_Ack</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, hpiic.o(i.HP_IIC_Wait_Ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = HP_IIC_Wait_Ack &rArr; HP_IIC_Stop &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_SDA_InMode
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CSendCMD
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[9a]"></a>Handle_ADCSampleTask</STRONG> (Thumb, 458 bytes, Stack size 56 bytes, adc.o(i.Handle_ADCSampleTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = Handle_ADCSampleTask &rArr; ADC_GetFlagStatus &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_SoftwareStartConversion
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetFlagStatus
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetConversionValue
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ClearFlag
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a2]"></a>Handle_BeepControl</STRONG> (Thumb, 700 bytes, Stack size 8 bytes, beep.o(i.Handle_BeepControl))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = Handle_BeepControl &rArr; GPIO_SetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_ResetMode3
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_SetMode3
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a5]"></a>Handle_DisplayFaultData</STRONG> (Thumb, 644 bytes, Stack size 8 bytes, app.o(i.Handle_DisplayFaultData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Handle_DisplayFaultData &rArr; LCD_DispNumSpecialCode &rArr; LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearAllErrorFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a8]"></a>Handle_DisplayLPModeSetting</STRONG> (Thumb, 346 bytes, Stack size 8 bytes, app.o(i.Handle_DisplayLPModeSetting))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = Handle_DisplayLPModeSetting &rArr; DisplayPressureValue &rArr; LCD_ClearNumAndFlag &rArr; LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearNumAndFlag
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayPressureValue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a9]"></a>Handle_DisplayMotorRun</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, app.o(i.Handle_DisplayMotorRun))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Handle_DisplayMotorRun &rArr; LCD_ClearAllMotorFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearAllMotorFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ab]"></a>Handle_DisplayPressure</STRONG> (Thumb, 756 bytes, Stack size 40 bytes, app.o(i.Handle_DisplayPressure))
+<BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = Handle_DisplayPressure &rArr; DisplayPressureValue &rArr; LCD_ClearNumAndFlag &rArr; LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetResolutionFive
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayPressureValue
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f7]"></a>Handle_FaultSummaryJudge</STRONG> (Thumb, 258 bytes, Stack size 0 bytes, app.o(i.Handle_FaultSummaryJudge))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b0]"></a>Handle_GetKey</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, key.o(i.Handle_GetKey))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312 + Unknown Stack Size
+<LI>Call Chain = Handle_GetKey &rArr; KeyTaskDeal &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyTaskDeal
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b2]"></a>Handle_KeyDetect</STRONG> (Thumb, 386 bytes, Stack size 24 bytes, key.o(i.Handle_KeyDetect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = Handle_KeyDetect &rArr; Beep_SetMode1 &rArr; GPIO_ResetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputData
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_InBuff
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_SetMode1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b4]"></a>Handle_LCDOff</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, app.o(i.Handle_LCDOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = Handle_LCDOff &rArr; GPIO_ResetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_OnOff
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f6]"></a>Handle_LPModeTask</STRONG> (Thumb, 266 bytes, Stack size 0 bytes, app.o(i.Handle_LPModeTask))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b6]"></a>Handle_PressureSample</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, app.o(i.Handle_PressureSample))
+<BR><BR>[Stack]<UL><LI>Max Depth = 248 + Unknown Stack Size
+<LI>Call Chain = Handle_PressureSample &rArr; LPValueSample &rArr; LpI2C_Init &rArr; LP_IIC_Read_Byte &rArr; LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPValueSample
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HPValueSample
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b8]"></a>Handle_PressureZeroTask</STRONG> (Thumb, 306 bytes, Stack size 16 bytes, app.o(i.Handle_PressureZeroTask))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312 + Unknown Stack Size
+<LI>Call Chain = Handle_PressureZeroTask &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_SetMode2
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[ba]"></a>Handle_SwitchFaultDetect</STRONG> (Thumb, 346 bytes, Stack size 8 bytes, fault.o(i.Handle_SwitchFaultDetect))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = Handle_SwitchFaultDetect &rArr; GPIO_ReadInputDataBit &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bb]"></a>Handle_UartReceDataFromDriver</STRONG> (Thumb, 348 bytes, Stack size 32 bytes, uart.o(i.Handle_UartReceDataFromDriver))
+<BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = Handle_UartReceDataFromDriver &rArr; UART_ReceiveBytes &rArr; delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetLength
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReceiveBytes
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Queue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[bf]"></a>Handle_UartSendDataToDriver</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, uart.o(i.Handle_UartSendDataToDriver))
+<BR><BR>[Stack]<UL><LI>Max Depth = 176 + Unknown Stack Size
+<LI>Call Chain = Handle_UartSendDataToDriver &rArr; UART_SendData &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SendData
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_GetFlagStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[5]"></a>HardFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, interrupt.o(i.HardFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[8c]"></a>HpI2CReceiveBytes</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, hpiic.o(i.HpI2CReceiveBytes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = HpI2CReceiveBytes &rArr; HP_IIC_Read_Byte &rArr; HP_IIC_NAck &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HPValueSample
+</UL>
+
+<P><STRONG><a name="[8d]"></a>HpI2CSendCMD</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, hpiic.o(i.HpI2CSendCMD))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = HpI2CSendCMD &rArr; HP_IIC_Read_Byte &rArr; HP_IIC_NAck &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HPValueSample
+</UL>
+
+<P><STRONG><a name="[8e]"></a>HpI2C_Init</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, hpiic.o(i.HpI2C_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = HpI2C_Init &rArr; HP_IIC_Read_Byte &rArr; HP_IIC_NAck &rArr; HP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HPValueSample
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[79]"></a>IWDG_ReloadCounter</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, sh32f9xx_sb0_iwdt.o(i.IWDG_ReloadCounter))
+<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+
+<P><STRONG><a name="[c2]"></a>IWDT_Enable</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, sh32f9xx_sb0_iwdt.o(i.IWDT_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = IWDT_Enable &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[be]"></a>Init_Queue</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, queue.o(i.Init_Queue))
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartReceDataFromDriver
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b1]"></a>KeyTaskDeal</STRONG> (Thumb, 596 bytes, Stack size 8 bytes, app.o(i.KeyTaskDeal))
+<BR><BR>[Stack]<UL><LI>Max Depth = 304 + Unknown Stack Size
+<LI>Call Chain = KeyTaskDeal &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearAllErrorFlag
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_SetMode2
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_ResetMode3
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_GetKey
+</UL>
+
+<P><STRONG><a name="[c3]"></a>Key_GPIO_Config</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, key.o(i.Key_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = Key_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b3]"></a>Key_InBuff</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, key.o(i.Key_InBuff))
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_KeyDetect
+</UL>
+
+<P><STRONG><a name="[cd]"></a>LCD_ClearAll</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, lcd.o(i.LCD_ClearAll))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_PowerOnDisplay
+</UL>
+
+<P><STRONG><a name="[a7]"></a>LCD_ClearAllErrorFlag</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, lcd.o(i.LCD_ClearAllErrorFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_ClearAllErrorFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyTaskDeal
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayFaultData
+</UL>
+
+<P><STRONG><a name="[aa]"></a>LCD_ClearAllMotorFlag</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, lcd.o(i.LCD_ClearAllMotorFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_ClearAllMotorFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayMotorRun
+</UL>
+
+<P><STRONG><a name="[c4]"></a>LCD_ClearMinusFlag</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, lcd.o(i.LCD_ClearMinusFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LCD_ClearMinusFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearNumAndFlag
+</UL>
+
+<P><STRONG><a name="[71]"></a>LCD_ClearNumAndFlag</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, lcd.o(i.LCD_ClearNumAndFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = LCD_ClearNumAndFlag &rArr; LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearUnitFlag
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearPointFlag
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearMinusFlag
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayPressureValue
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayLPModeSetting
+</UL>
+
+<P><STRONG><a name="[c5]"></a>LCD_ClearPointFlag</STRONG> (Thumb, 82 bytes, Stack size 12 bytes, lcd.o(i.LCD_ClearPointFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LCD_ClearPointFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearNumAndFlag
+</UL>
+
+<P><STRONG><a name="[c6]"></a>LCD_ClearUnitFlag</STRONG> (Thumb, 82 bytes, Stack size 12 bytes, lcd.o(i.LCD_ClearUnitFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearNumAndFlag
+</UL>
+
+<P><STRONG><a name="[c7]"></a>LCD_Config_Init</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, lcd.o(i.LCD_Config_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = LCD_Config_Init &rArr; LCD_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_StructInit
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockOnOff
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_OnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[73]"></a>LCD_DispNum</STRONG> (Thumb, 330 bytes, Stack size 0 bytes, lcd.o(i.LCD_DispNum))
+<BR><BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNumSpecialCode
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearNumAndFlag
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayPressureValue
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_PowerOnDisplay
+</UL>
+
+<P><STRONG><a name="[a6]"></a>LCD_DispNumSpecialCode</STRONG> (Thumb, 428 bytes, Stack size 12 bytes, lcd.o(i.LCD_DispNumSpecialCode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = LCD_DispNumSpecialCode &rArr; LCD_ClearUnitFlag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearUnitFlag
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearPointFlag
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearMinusFlag
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureZeroTask
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayLPModeSetting
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayFaultData
+</UL>
+
+<P><STRONG><a name="[72]"></a>LCD_DispOrClrFlag</STRONG> (Thumb, 1870 bytes, Stack size 0 bytes, lcd.o(i.LCD_DispOrClrFlag))
+<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearUnitFlag
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearPointFlag
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearMinusFlag
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearAllMotorFlag
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearAllErrorFlag
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyTaskDeal
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DisplayPressureValue
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_PowerOnDisplay
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureZeroTask
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayMotorRun
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayFaultData
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_BeepControl
+</UL>
+
+<P><STRONG><a name="[cc]"></a>LCD_DispalyAll</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, lcd.o(i.LCD_DispalyAll))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_PowerOnDisplay
+</UL>
+
+<P><STRONG><a name="[c8]"></a>LCD_GPIO_Config</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, lcd.o(i.LCD_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = LCD_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Config_Init
+</UL>
+
+<P><STRONG><a name="[ca]"></a>LCD_Init</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sh32f9xx_sb0_lcd.o(i.LCD_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Config_Init
+</UL>
+
+<P><STRONG><a name="[b5]"></a>LCD_OnOff</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, sh32f9xx_sb0_lcd.o(i.LCD_OnOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = LCD_OnOff &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Config_Init
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_LCDOff
+</UL>
+
+<P><STRONG><a name="[cb]"></a>LCD_PowerOnDisplay</STRONG> (Thumb, 200 bytes, Stack size 8 bytes, lcd.o(i.LCD_PowerOnDisplay))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = LCD_PowerOnDisplay &rArr; GPIO_SetBits &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispalyAll
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ClearAll
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispOrClrFlag
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DispNum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c9]"></a>LCD_StructInit</STRONG> (Thumb, 140 bytes, Stack size 0 bytes, sh32f9xx_sb0_lcd.o(i.LCD_StructInit))
+<BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Config_Init
+</UL>
+
+<P><STRONG><a name="[ce]"></a>LED_GPIO_Config</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, lcd.o(i.LED_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = LED_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b7]"></a>LPValueSample</STRONG> (Thumb, 232 bytes, Stack size 24 bytes, lpiic.o(i.LPValueSample))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240 + Unknown Stack Size
+<LI>Call Chain = LPValueSample &rArr; LpI2C_Init &rArr; LP_IIC_Read_Byte &rArr; LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CSendCMD
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CReceiveBytes
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureSample
+</UL>
+
+<P><STRONG><a name="[d2]"></a>LP_IIC_Ack</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lpiic.o(i.LP_IIC_Ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_Ack &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[d4]"></a>LP_IIC_GPIO_Init</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, lpiic.o(i.LP_IIC_GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_GPIO_Init &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d5]"></a>LP_IIC_NAck</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lpiic.o(i.LP_IIC_NAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[d6]"></a>LP_IIC_Read_Byte</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, lpiic.o(i.LP_IIC_Read_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 208 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_Read_Byte &rArr; LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_InMode
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_NAck
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Ack
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CSendCMD
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[d7]"></a>LP_IIC_SDA_InMode</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, lpiic.o(i.LP_IIC_SDA_InMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_SDA_InMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+
+<P><STRONG><a name="[d3]"></a>LP_IIC_SDA_OutMode</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, lpiic.o(i.LP_IIC_SDA_OutMode))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_NAck
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Ack
+</UL>
+
+<P><STRONG><a name="[d8]"></a>LP_IIC_Send_Byte</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, lpiic.o(i.LP_IIC_Send_Byte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_Send_Byte &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CSendCMD
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[d9]"></a>LP_IIC_Start</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lpiic.o(i.LP_IIC_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_Start &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CSendCMD
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[da]"></a>LP_IIC_Stop</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, lpiic.o(i.LP_IIC_Stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_Stop &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_OutMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CSendCMD
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CReceiveBytes
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+</UL>
+
+<P><STRONG><a name="[db]"></a>LP_IIC_Wait_Ack</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, lpiic.o(i.LP_IIC_Wait_Ack))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = LP_IIC_Wait_Ack &rArr; LP_IIC_Stop &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_SDA_InMode
+</UL>
+<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CSendCMD
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2CReceiveBytes
+</UL>
+
+<P><STRONG><a name="[f2]"></a>LSI_TURNON</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, lcd.o(i.LSI_TURNON))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[cf]"></a>LpI2CReceiveBytes</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, lpiic.o(i.LpI2CReceiveBytes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = LpI2CReceiveBytes &rArr; LP_IIC_Read_Byte &rArr; LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPValueSample
+</UL>
+
+<P><STRONG><a name="[d0]"></a>LpI2CSendCMD</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, lpiic.o(i.LpI2CSendCMD))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = LpI2CSendCMD &rArr; LP_IIC_Read_Byte &rArr; LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPValueSample
+</UL>
+
+<P><STRONG><a name="[d1]"></a>LpI2C_Init</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, lpiic.o(i.LpI2C_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 216 + Unknown Stack Size
+<LI>Call Chain = LpI2C_Init &rArr; LP_IIC_Read_Byte &rArr; LP_IIC_NAck &rArr; LP_IIC_SDA_OutMode &rArr; GPIO_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LPValueSample
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[6]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, interrupt.o(i.MemManage_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[4]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.NMI_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[dc]"></a>NVIC_Init</STRONG> (Thumb, 146 bytes, Stack size 24 bytes, sh32f9xx_sb0_nvic.o(i.NVIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = NVIC_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+</UL>
+
+<P><STRONG><a name="[dd]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, sh32f9xx_sb0_nvic.o(i.NVIC_PriorityGroupConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = NVIC_PriorityGroupConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[c]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.PendSV_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[61]"></a>RCC_AHBPeriphClockOnOff</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, sh32f9xx_sb0_rcc.o(i.RCC_AHBPeriphClockOnOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = RCC_AHBPeriphClockOnOff &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GPIO_Config
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SW_ERROR_GPIO_Config
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_GPIO_Init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_GPIO_Config
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_GPIO_Init
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_GPIO_Config
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GPIO_Config
+</UL>
+
+<P><STRONG><a name="[de]"></a>RCC_APB0PeriphClockOnOff</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, sh32f9xx_sb0_rcc.o(i.RCC_APB0PeriphClockOnOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = RCC_APB0PeriphClockOnOff &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+</UL>
+
+<P><STRONG><a name="[6a]"></a>RCC_APB1PeriphClockOnOff</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, sh32f9xx_sb0_rcc.o(i.RCC_APB1PeriphClockOnOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = RCC_APB1PeriphClockOnOff &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Config_Init
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Mode_Config
+</UL>
+
+<P><STRONG><a name="[ee]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 402 bytes, Stack size 24 bytes, sh32f9xx_sb0_rcc.o(i.RCC_GetClocksFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+</UL>
+
+<P><STRONG><a name="[a]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.SVC_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[df]"></a>SW_ERROR_GPIO_Config</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, fault.o(i.SW_ERROR_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = SW_ERROR_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[7a]"></a>SYSCFG_VLVRConfig</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, sh32f9xx_sb0_syscfg.o(i.SYSCFG_VLVRConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = SYSCFG_VLVRConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord_NoCheck
+</UL>
+
+<P><STRONG><a name="[e0]"></a>SensorPowerTrig_GPIO_Config</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, lpiic.o(i.SensorPowerTrig_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = SensorPowerTrig_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[af]"></a>SetResolutionFive</STRONG> (Thumb, 82 bytes, Stack size 8 bytes, app.o(i.SetResolutionFive))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SetResolutionFive
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+</UL>
+
+<P><STRONG><a name="[f5]"></a>SoftTimer_Check</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, timer.o(i.SoftTimer_Check))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[f4]"></a>SoftTimer_Setup</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, timer.o(i.SoftTimer_Setup))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[d]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.SysTick_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>SystemInit</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_sh32f9xx_sb0.o(i.SystemInit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SystemInit &rArr; SetSysClockTo72
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(.text)
+</UL>
+<P><STRONG><a name="[e3]"></a>TIM5_Config</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, timer.o(i.TIM5_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 192 + Unknown Stack Size
+<LI>Call Chain = TIM5_Config &rArr; NVIC_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_StructInit
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OnOff
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Init
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_INTConfig
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB0PeriphClockOnOff
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2e]"></a>TIM5_Handler</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, timer.o(i.TIM5_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = TIM5_Handler &rArr; TIM_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[e8]"></a>TIM_ClearFlag</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, sh32f9xx_sb0_timer.o(i.TIM_ClearFlag))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152 + Unknown Stack Size
+<LI>Call Chain = TIM_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Handler
+</UL>
+
+<P><STRONG><a name="[e6]"></a>TIM_INTConfig</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, sh32f9xx_sb0_timer.o(i.TIM_INTConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = TIM_INTConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+</UL>
+
+<P><STRONG><a name="[e5]"></a>TIM_Init</STRONG> (Thumb, 126 bytes, Stack size 16 bytes, sh32f9xx_sb0_timer.o(i.TIM_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = TIM_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+</UL>
+
+<P><STRONG><a name="[e7]"></a>TIM_OnOff</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, sh32f9xx_sb0_timer.o(i.TIM_OnOff))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = TIM_OnOff &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+</UL>
+
+<P><STRONG><a name="[e4]"></a>TIM_StructInit</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sh32f9xx_sb0_timer.o(i.TIM_StructInit))
+<BR><BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+</UL>
+
+<P><STRONG><a name="[e9]"></a>UART2_Config</STRONG> (Thumb, 164 bytes, Stack size 40 bytes, uart.o(i.UART2_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 224 + Unknown Stack Size
+<LI>Call Chain = UART2_Config &rArr; UART_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_INTConfig
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockOnOff
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[29]"></a>UART2_Handler</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, interrupt.o(i.UART2_Handler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168 + Unknown Stack Size
+<LI>Call Chain = UART2_Handler &rArr; UART_ReceiveData &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReceiveData
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_GetFlagStatus
+<LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;En_Queue
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[c0]"></a>UART_GetFlagStatus</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, sh32f9xx_sb0_uart.o(i.UART_GetFlagStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = UART_GetFlagStatus &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Handler
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartSendDataToDriver
+</UL>
+
+<P><STRONG><a name="[eb]"></a>UART_INTConfig</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, sh32f9xx_sb0_uart.o(i.UART_INTConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = UART_INTConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+</UL>
+
+<P><STRONG><a name="[ea]"></a>UART_Init</STRONG> (Thumb, 774 bytes, Stack size 40 bytes, sh32f9xx_sb0_uart.o(i.UART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = UART_Init &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+</UL>
+
+<P><STRONG><a name="[bd]"></a>UART_ReceiveBytes</STRONG> (Thumb, 90 bytes, Stack size 32 bytes, uart.o(i.UART_ReceiveBytes))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = UART_ReceiveBytes &rArr; delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetLength
+<LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;De_Queue
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartReceDataFromDriver
+</UL>
+
+<P><STRONG><a name="[ec]"></a>UART_ReceiveData</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, sh32f9xx_sb0_uart.o(i.UART_ReceiveData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = UART_ReceiveData &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Handler
+</UL>
+
+<P><STRONG><a name="[c1]"></a>UART_SendData</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, sh32f9xx_sb0_uart.o(i.UART_SendData))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = UART_SendData &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartSendDataToDriver
+</UL>
+
+<P><STRONG><a name="[8]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, interrupt.o(i.UsageFault_Handler))
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[5e]"></a>assert_failed</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, sh32f9xx_sb0_retarget.o(i.assert_failed))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144 + Unknown Stack Size
+<LI>Call Chain = assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_SendData
+<LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_INTConfig
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockOnOff
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_OnOff
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+<LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReceiveData
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_GetFlagStatus
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Enable
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_SoftwareStartConversion
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_OnOff
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetFlagStatus
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetConversionValue
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ClearFlag
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ChannelConfig
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputData
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSCFG_VLVRConfig
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramPage_HalfWord
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_EraseSector
+<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OnOff
+<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Init
+<LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_INTConfig
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearFlag
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB0PeriphClockOnOff
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_Verify_Byte
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_E2_ProgramHalfWord
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_ClearFlag
+</UL>
+
+<P><STRONG><a name="[f0]"></a>delay_init</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, delay.o(i.delay_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = delay_init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[e1]"></a>delay_ms</STRONG> (Thumb, 24 bytes, Stack size 12 bytes, delay.o(i.delay_ms))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = delay_ms
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_ReceiveBytes
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[91]"></a>delay_us</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, delay.o(i.delay_us))
+<BR><BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartSendDataToDriver
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Wait_Ack
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Stop
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Start
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Send_Byte
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Read_Byte
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_NAck
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_Ack
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Wait_Ack
+<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Stop
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Start
+<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Send_Byte
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Read_Byte
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_NAck
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_Ack
+</UL>
+
+<P><STRONG><a name="[3a]"></a>fputc</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, sh32f9xx_sb0_retarget.o(i.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = fputc
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_send
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> _printf_char_file.o(.text)
+</UL>
+<P><STRONG><a name="[4a]"></a>main</STRONG> (Thumb, 408 bytes, Stack size 0 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312 + Unknown Stack Size
+<LI>Call Chain = main &rArr; value_init &rArr; E2_InitSystemData &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;value_init
+<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init
+<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART2_Config
+<LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM5_Config
+<LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SoftTimer_Setup
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SoftTimer_Check
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SensorPowerTrig_GPIO_Config
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SW_ERROR_GPIO_Config
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LpI2C_Init
+<LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSI_TURNON
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LP_IIC_GPIO_Init
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_GPIO_Config
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_PowerOnDisplay
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Config_Init
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_GPIO_Config
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Init_Queue
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDT_Enable
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_ReloadCounter
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HpI2C_Init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartSendDataToDriver
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_UartReceDataFromDriver
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_SwitchFaultDetect
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureZeroTask
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_PressureSample
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_LPModeTask
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_LCDOff
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_KeyDetect
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_GetKey
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_FaultSummaryJudge
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayMotorRun
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayLPModeSetting
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayFaultData
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_BeepControl
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HP_IIC_GPIO_Init
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Beep_GPIO_Config
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[f1]"></a>uart_send</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, sh32f9xx_sb0_retarget.o(i.uart_send))
+<BR><BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[f3]"></a>value_init</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, app.o(i.value_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 312 + Unknown Stack Size
+<LI>Call Chain = value_init &rArr; E2_InitSystemData &rArr; E2_Write_DataStr_HalfWord &rArr; E2_Write_DataStr_HalfWord_NoCheck &rArr; FLASH_E2_ProgramPage_HalfWord &rArr; FLASH_E2_ProgramHalfWord &rArr; FLASH_WaitForLastOperation &rArr; FLASH_GetStatus &rArr; FLASH_ClearFlag &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_Write_DataStr_HalfWord
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;E2_InitSystemData
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9f]"></a>__aeabi_d2f</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2f
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[f8]"></a>_d2f</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, d2f.o(x$fpl$d2f), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fretinf
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[ff]"></a>__fpl_dcmp_Inf</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, dcmpi.o(x$fpl$dcmpinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dcmple
+</UL>
+
+<P><STRONG><a name="[ad]"></a>__aeabi_ddiv</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_ddiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+</UL>
+
+<P><STRONG><a name="[fb]"></a>_ddiv</STRONG> (Thumb, 552 bytes, Stack size 32 bytes, ddiv.o(x$fpl$ddiv), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[ae]"></a>__aeabi_d2iz</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dfix.o(x$fpl$dfix))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_d2iz
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+</UL>
+
+<P><STRONG><a name="[fd]"></a>_dfix</STRONG> (Thumb, 94 bytes, Stack size 32 bytes, dfix.o(x$fpl$dfix), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[a1]"></a>__aeabi_cdcmple</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dleqf.o(x$fpl$dleqf))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_cdcmple
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[fe]"></a>_dcmple</STRONG> (Thumb, 120 bytes, Stack size 32 bytes, dleqf.o(x$fpl$dleqf), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dcmp_Inf
+</UL>
+
+<P><STRONG><a name="[138]"></a>__fpl_dcmple_InfNaN</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, dleqf.o(x$fpl$dleqf), UNUSED)
+
+<P><STRONG><a name="[9e]"></a>__aeabi_dmul</STRONG> (Thumb, 0 bytes, Stack size 32 bytes, dmul.o(x$fpl$dmul))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __aeabi_dmul
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[100]"></a>_dmul</STRONG> (Thumb, 332 bytes, Stack size 32 bytes, dmul.o(x$fpl$dmul), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dnaninf
+</UL>
+
+<P><STRONG><a name="[fa]"></a>__fpl_dnaninf</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, dnaninf.o(x$fpl$dnaninf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dcmple
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dfix
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2f
+</UL>
+
+<P><STRONG><a name="[fc]"></a>__fpl_dretinf</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dretinf.o(x$fpl$dretinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+</UL>
+
+<P><STRONG><a name="[9d]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_f2d
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[101]"></a>_f2d</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, f2d.o(x$fpl$f2d), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fnaninf
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_dretinf
+</UL>
+
+<P><STRONG><a name="[a0]"></a>__aeabi_fadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fadd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fadd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[103]"></a>_fadd</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fadd), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fretinf
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fnaninf
+<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub1
+</UL>
+
+<P><STRONG><a name="[9c]"></a>__aeabi_fdiv</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, fdiv.o(x$fpl$fdiv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fdiv
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[105]"></a>_fdiv</STRONG> (Thumb, 384 bytes, Stack size 16 bytes, fdiv.o(x$fpl$fdiv), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fretinf
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fnaninf
+</UL>
+
+<P><STRONG><a name="[ac]"></a>__aeabi_i2f</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflt_clz.o(x$fpl$fflt))
+<BR><BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_DisplayPressure
+</UL>
+
+<P><STRONG><a name="[139]"></a>_fflt</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, fflt_clz.o(x$fpl$fflt), UNUSED)
+
+<P><STRONG><a name="[9b]"></a>__aeabi_ui2f</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflt_clz.o(x$fpl$ffltu))
+<BR><BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Handle_ADCSampleTask
+</UL>
+
+<P><STRONG><a name="[13a]"></a>_ffltu</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, fflt_clz.o(x$fpl$ffltu), UNUSED)
+
+<P><STRONG><a name="[102]"></a>__fpl_fnaninf</STRONG> (Thumb, 140 bytes, Stack size 8 bytes, fnaninf.o(x$fpl$fnaninf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fdiv
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+</UL>
+
+<P><STRONG><a name="[f9]"></a>__fpl_fretinf</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fretinf.o(x$fpl$fretinf), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fdiv
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2f
+</UL>
+
+<P><STRONG><a name="[13b]"></a>__aeabi_fsub</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fsub), UNUSED)
+
+<P><STRONG><a name="[106]"></a>_fsub</STRONG> (Thumb, 234 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fsub), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__fpl_fnaninf
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd1
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[9]"></a>Default_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, startup_sh32f9001_keil.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Default_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Default_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_sh32f9001_keil.o(RESET)
+</UL>
+<P><STRONG><a name="[60]"></a>ADC_GPIO_Config</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, adc.o(i.ADC_GPIO_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 184 + Unknown Stack Size
+<LI>Call Chain = ADC_GPIO_Config &rArr; GPIO_PinAFConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockOnOff
+</UL>
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init_Config
+</UL>
+
+<P><STRONG><a name="[68]"></a>ADC_Mode_Config</STRONG> (Thumb, 120 bytes, Stack size 24 bytes, adc.o(i.ADC_Mode_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 200 + Unknown Stack Size
+<LI>Call Chain = ADC_Mode_Config &rArr; ADC_ChannelConfig &rArr; assert_failed &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockOnOff
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_StructInit
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_OnOff
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_ChannelConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init_Config
+</UL>
+
+<P><STRONG><a name="[e2]"></a>SetSysClockTo72</STRONG> (Thumb, 252 bytes, Stack size 12 bytes, system_sh32f9xx_sb0.o(i.SetSysClockTo72))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClockTo72
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
+</UL>
+
+<P><STRONG><a name="[107]"></a>_fadd1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, faddsub_clz.o(x$fpl$fadd), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fsub
+</UL>
+
+<P><STRONG><a name="[104]"></a>_fsub1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, faddsub_clz.o(x$fpl$fsub), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fadd
+</UL>
+
+<P><STRONG><a name="[3b]"></a>_printf_input_char</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _printf_char_common.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> _printf_char_common.o(.text)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>
